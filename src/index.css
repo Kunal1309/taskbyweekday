@@ -1,0 +1,282 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Home Page */
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left Part */
+.leftpart{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    border-right: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftpart_child_1{
+    background-color: rgb(0, 255, 208);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    align-items: center;
+    margin: 23% 20% 23% 30%;
+    display: flex;
+}
+
+.leftpart_child_1>h2{
+    margin-left: 20%;
+}
+
+.colorSpot{
+    background-color: darkorange;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 30%;
+}
+
+.leftpart_child_2, .leftpart_child_3{
+    border-top: 2px solid rgb(183, 180, 180, 0.2);
+    width: 70px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(183, 180, 180, 0.2);
+    padding-bottom: 30px;
+}
+
+.getjob{
+    font-size: 15px;
+    margin-top: 30px;
+    color: rgb(177, 174, 174);
+}
+
+.leftpart_child_3{
+    border-bottom: none;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+}
+
+.leftpart_bottom_child{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.profileImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Middle Part */
+.middlepart{
+    position:sticky;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right:100px;
+    flex-wrap: wrap;
+}
+
+.header{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: calc(100vw - 200px);
+    height: 60px;
+    border-bottom: 1px solid rgb(197, 194, 194, 0.8);
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header_child_1{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.handwave{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: aquamarine;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.btncore{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: none;
+    background-color: white; 
+    margin-left: 4px;
+}
+
+.greet{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 80vw;
+    padding: 10px;
+    margin: 3%;
+    border-radius: 20px;
+    background-color: rgb(176, 238, 186);
+}
+
+.jobcategories{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-size: larger;
+    margin-left: 40%;
+}
+
+.searchjob{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    flex-wrap: wrap;
+    margin-left: 3%;
+}
+
+.joblist{
+    margin: 5% 3%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.jobdesc{
+    margin-top: 15px;
+    position: relative;
+    padding: 2%;
+    width: 23vw;
+    min-width: 15vw;
+    min-height: 70vh;
+    border: 1px solid rgb(159, 157, 157);
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.jobdesc:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.companylogo{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.jobdeschead{
+    display: flex;
+}
+
+.companyName{
+    color: grey;
+    margin-bottom: 3px;
+}
+
+.jobRole{
+    margin-bottom: 3px;
+    font-size: medium;
+}
+
+.location{
+    font-size:small;
+}
+
+.salary{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: rgb(149, 139, 139);
+}
+
+.greenlogo{
+    color: green;
+}
+
+.comapnyDetail{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.companyProfile{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.jobdetailbycompany{
+    color: grey;
+    overflow: scroll;
+}
+
+.applybtn{
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    bottom: 2%;
+    font-size: large;
+    font-weight: bolder;
+    background-color: rgb(123, 255, 47);
+    border-radius: 20px;
+    border: none;
+}
+
+.salaryblock{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Right Part */
+.rightpart{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    right: 0%;
+    background-color: rgba(174, 247, 223, 0.905);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightpart_top_child{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    width: 60px;
+    border-bottom: 2px solid rgb(197, 194, 194, 0.8);
+}
+
+.rightpart_top_child>.profileImg{
+    margin-left: 5px;
+}
